@@ -1,2 +1,6 @@
 /target
-/
+.fleet/
+.vscode/
+.idea/
+dist/
+.gitignore

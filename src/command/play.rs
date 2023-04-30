@@ -33,7 +33,11 @@ async fn play(com_ctx: &CommandContext) -> CommandResult{
     let name = com_ctx.get_str_arg("name").expect("error: search has no results");
     let source:Input = Restartable::ytdl_search(name, true).await?.into();
     let _queue = handler.enqueue_source(source);
+<<<<<<< HEAD
     //com_ctx.channel().await.expect("").id().send_message(com_ctx.ctx.http, "help");
+=======
+    com_ctx.channel().await.expect("").id().send_message(com_ctx.ctx.http, mess);
+>>>>>>> e6f258194d7207417d816136037fd1a783de9c8c
     //com_ctx.send_str(&("Added".to_string() + &handler.queue().current().expect("could not find track in source's metadata").metadata().track.as_deref().expect("not found").to_owned() + "to queue.")).await?;
 //    println!("{}", handler.queue().current().expect("o").metadata().source_url.as_ref().expect("ooh"));
     Ok(())
