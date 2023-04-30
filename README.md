@@ -1,2 +1,3 @@
 # MusicalPenguin
-one of the attempts at a discord bot of all time
+Currently placed on Hiatus, will implement more features and better interactivity.
+
